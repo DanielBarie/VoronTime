@@ -49,12 +49,24 @@ See https://forum.vorondesign.com/threads/protect-your-klipper-printer-mainsail-
 Just Update all (lower right corner)
 ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/27ede033-c0b2-42bb-8d99-68b102502f1a)
 
-## Install Klipper Installation and Update Helper
+## Install Klipper Installation and Update Helper and KlipperScreen
 - Mainsail comes with git installed.
 - get kiauh: ```cd ~ && git clone https://github.com/dw-0/kiauh.git```
 - run: ```./kiauh/kiauh```
 - enter ```1``, you will probably be asked for sudo...
 - enter ```5``` to install klipperScreen (takes a while because we need all the packages for a GUI)
-- 
+- enter ```b```, ```q``` to leave kiauh
+- nice, Touchscreen Interface is online.
 
+## Install Klipper Firmware on Octopus BTT Board
+- https://docs.vorondesign.com/build/software/octopus_klipper.html
+- make is already installed
+- ```cd klipper```
+- ```make clean```
+- ```make menuconfig```
+- we have:
+  - STM32F446
+- all other options as per above guide (only had to change clock to 12MHz)
+- compile (```make```), gives firmware bin file
+- Short BOOT0 Jumper for DFU Firmware transfer
 
