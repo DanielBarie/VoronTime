@@ -44,3 +44,17 @@ See https://forum.vorondesign.com/threads/protect-your-klipper-printer-mainsail-
     auth_basic_user_file /etc/nginx/0-passwords.txt;
     ```
 - ```sudo service nginx restart```
+
+## Update Mainsail:
+Just Update all (lower right corner)
+![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/27ede033-c0b2-42bb-8d99-68b102502f1a)
+
+## install Kipper Installation and Update Helper
+- Mainsail comes with git installed.
+- get kiauh: ```cd ~ && git clone https://github.com/dw-0/kiauh.git```
+- run: ```./kiauh/kiauh```
+- enter ```1``, you will probably be asked for sudo...
+- enter ```5``` to install klipperScreen (takes a while because we need all the packages for a GUI)
+- 
+
+
