@@ -70,5 +70,7 @@ Just Update all (lower right corner)
 - compile (```make```), gives firmware bin file
 - as for booting the board in DFU mode: That's a huge pain. Sometimes it might work, sometimes it just doesn't for no obvious reason.
 - So we go for putting the fimrware on the sd card.
+  - don't forget to rename to ```firmware.bin```
+  - use a sufficiently small SD card (32GB because of FAT vs exFAT)
 
 
