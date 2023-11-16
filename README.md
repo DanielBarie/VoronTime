@@ -73,4 +73,7 @@ Just Update all (lower right corner)
   - don't forget to rename to ```firmware.bin```
   - use a sufficiently small SD card (32GB because of FAT vs exFAT)
 
+## Install Configuration Files for Printer in Mainsail
+https://docs.vorondesign.com/build/software/configuration.html
+
 
