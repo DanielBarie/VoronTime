@@ -76,4 +76,11 @@ Just Update all (lower right corner)
 ## Install Configuration Files for Printer in Mainsail
 https://docs.vorondesign.com/build/software/configuration.html
 
+# Issues still open:
+- check groundung of DIN rails
+- check grounding of frame
+- check 5V Octopus Adapter according to https://news.ldomotors.com/2023/01/19/octopus-power-adapter-issue/
+- square gantry
+- install lcd cover
+
 
