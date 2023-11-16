@@ -4,6 +4,7 @@ It's Voron TIme.
 Built with an LDO kit.
 
 # Things to do after completing mechanics
+Following https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_c
 
 ## Get the printer into the local wlan
 - Maybe do this from the imager (Ctrl-Shift-X), if not:
