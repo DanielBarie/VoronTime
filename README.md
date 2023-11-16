@@ -68,5 +68,7 @@ Just Update all (lower right corner)
   - STM32F446
 - all other options as per above guide (only had to change clock to 12MHz)
 - compile (```make```), gives firmware bin file
-- Short BOOT0 Jumper for DFU Firmware transfer
+- as for booting the board in DFU mode: That's a huge pain. Sometimes it might work, sometimes it just doesn't for no obvious reason.
+- So we go for putting the fimrware on the sd card.
+
 
