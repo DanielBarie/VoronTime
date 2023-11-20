@@ -80,8 +80,7 @@ https://docs.vorondesign.com/build/software/configuration.html
 - rename to ```printer.cfg```
 - upload mainsail -> machine -> config files -> upload:
 ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/729b459f-72ff-4ccb-b0c7-51eb53b60356)
-
-- 
+- our octopus board's id is ```usb-Klipper_stm32f446xx_52001F000551313133353932-if00``` (```ls /dev/serial/by-id```)
 
 # Issues still open:
 - check groundung of DIN rails
