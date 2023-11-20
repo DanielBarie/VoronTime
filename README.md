@@ -76,6 +76,11 @@ Just Update all (lower right corner)
 
 ## Install Configuration Files for Printer in Mainsail
 https://docs.vorondesign.com/build/software/configuration.html
+- get it from https://raw.githubusercontent.com/VoronDesign/Voron-2/Voron2.4/firmware/klipper_configurations/Octopus/Voron2_Octopus_Config.cfghttps://raw.githubusercontent.com/VoronDesign/Voron-2/Voron2.4/firmware/klipper_configurations/Octopus/Voron2_Octopus_Config.cfg
+- upload mainsail -> machine -> config files -> upload:
+![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/729b459f-72ff-4ccb-b0c7-51eb53b60356)
+
+- 
 
 # Issues still open:
 - check groundung of DIN rails
