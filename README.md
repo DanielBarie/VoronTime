@@ -84,6 +84,9 @@ https://docs.vorondesign.com/build/software/configuration.html
 - edit printer.cfg:
   - let mainsail know about the Octopus board:
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/b873e335-564e-4fce-ac1c-863097cc9185)
+  - let's have a 350mm printer:
+    ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/1053158b-371a-410c-818f-e3f61b4c7b52)
+   
 
 
 - 
