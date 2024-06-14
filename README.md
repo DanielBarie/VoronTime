@@ -90,25 +90,30 @@ https://docs.vorondesign.com/build/software/configuration.html
 ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/729b459f-72ff-4ccb-b0c7-51eb53b60356)
 - our octopus board's id is ```usb-Klipper_stm32f446xx_52001F000551313133353932-if00``` (```ls /dev/serial/by-id```)
 - edit printer.cfg to get basic mechanics going:
-  - let mainsail know about the Octopus board:
+  - let mainsail know about the Octopus board:  
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/b873e335-564e-4fce-ac1c-863097cc9185)
-  - let's have a 350mm printer:  
+  - let's have a 350mm printer:    
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/1053158b-371a-410c-818f-e3f61b4c7b52)
-  - another axis with 350mm:
+  - another axis with 350mm:  
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/1bcbf7b0-75b0-4a15-938a-e521de61cc84)
   - Z endstop:  
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/1d32f9b5-dbfb-4b64-9baa-e5f7cb346a70)
 
-  - z1 stepper enable:
+  - z1 stepper enable:  
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/4c6a18b9-b30b-47aa-aca4-9db96a04b621)
+
+  - Extruder Control pins:
+    ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/8fd454f4-98dc-435f-b837-27850e00bb64)
+    
 
   - Nozzle Heater pin:  
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/e0bdde31-6856-4d70-ba5c-21dd7dc5251d)
 
-  - Nozzle heater thermistor:  
-    ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/c4462044-e19f-4c7e-846f-5e785926450b)
+  - Nozzle heater thermistor:  (change to ATC Semitec)
+   ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/989720f9-ba14-4c05-ba66-5d2c05ed66f5)
 
-  - Bed Heater:  
+
+  - Bed Heater:  (change thermistor to ATC Semitec)
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/e55f88ba-5110-48eb-9509-64891e77090f)
 
   - 
