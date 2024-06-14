@@ -119,7 +119,11 @@ https://docs.vorondesign.com/build/software/configuration.html
   - Probe config:
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/37ebdaa5-6241-4665-a0c0-318c16f9c3b8)
 
-  - 
+  - Gantry corners / probe points config:
+    ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/f324ba0e-792f-4cab-a1ee-6d7eea6470cc)
+-   
+    
+
    
 
 
