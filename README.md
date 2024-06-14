@@ -18,6 +18,10 @@ Following https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_c
 - or via ```sudo raspi-config```or
 - via placing ```ssh``` file in boot partition before inserting sd card into pi
 
+## install useful tools
+- ```sudo apt-get install mc```
+
+
 ## Activate unattended upgrades for OS
 - ```sudo apt-get install unattended-upgrades```
 - Fix stupid Raspberry Pi OS Update Naming: https://raspberrypi.stackexchange.com/questions/38931/how-do-i-set-my-raspberry-pi-to-automatically-update-upgrade
