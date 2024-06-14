@@ -116,6 +116,9 @@ https://docs.vorondesign.com/build/software/configuration.html
   - Bed Heater:  (change thermistor to ATC Semitec)
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/e55f88ba-5110-48eb-9509-64891e77090f)
 
+  - Probe config:
+    ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/37ebdaa5-6241-4665-a0c0-318c16f9c3b8)
+
   - 
    
 
