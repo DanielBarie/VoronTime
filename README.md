@@ -122,7 +122,8 @@ https://docs.vorondesign.com/build/software/configuration.html
 
   - Gantry corners / probe points config:
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/f324ba0e-792f-4cab-a1ee-6d7eea6470cc)
--   
+
+  -   Next: Check Bed Heating (complains about not heating quickly enough); Extruder Heating works
     
 
    
