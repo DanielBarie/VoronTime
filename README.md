@@ -6,6 +6,9 @@ Built with an LDO kit.
 # Things to do after completing mechanics
 Following https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_c
 
+# SAFETY!
+Disconnect Heater Cables for Hotend and Bed Heating. (Pre-loaded BTT firmware may have these active, so Hotend and/or Bed may get hot).
+
 ## Get the printer into the local wlan
 - Maybe do this from the imager (Ctrl-Shift-X), if not:
 -  ```sudo raspi-config```
@@ -82,6 +85,7 @@ Just Update all (lower right corner)
 https://docs.vorondesign.com/build/software/configuration.html
 - get it from https://raw.githubusercontent.com/VoronDesign/Voron-2/Voron2.4/firmware/klipper_configurations/Octopus/Voron2_Octopus_Config.cfghttps://raw.githubusercontent.com/VoronDesign/Voron-2/Voron2.4/firmware/klipper_configurations/Octopus/Voron2_Octopus_Config.cfg
 - rename to ```printer.cfg```
+- OR: Get the LDO kri version (because we've been using the Rev. C kit): https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/Firmware/octopus-printer-rev-c.cfg  
 - upload mainsail -> machine -> config files -> upload:
 ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/729b459f-72ff-4ccb-b0c7-51eb53b60356)
 - our octopus board's id is ```usb-Klipper_stm32f446xx_52001F000551313133353932-if00``` (```ls /dev/serial/by-id```)
