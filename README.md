@@ -108,7 +108,10 @@ https://docs.vorondesign.com/build/software/configuration.html
   - Nozzle heater thermistor:  
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/c4462044-e19f-4c7e-846f-5e785926450b)
 
-  - Continue at bed heater...
+  - Bed Heater:  
+    ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/e55f88ba-5110-48eb-9509-64891e77090f)
+
+  - 
    
 
 
