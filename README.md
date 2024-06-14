@@ -91,7 +91,8 @@ https://docs.vorondesign.com/build/software/configuration.html
 - our octopus board's id is ```usb-Klipper_stm32f446xx_52001F000551313133353932-if00``` (```ls /dev/serial/by-id```)
 - edit printer.cfg to get basic mechanics going:
   - let mainsail know about the Octopus board:  
-    ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/b873e335-564e-4fce-ac1c-863097cc9185)
+   ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/fb708b1d-515e-4c67-879d-89c86cd4f61c)
+
   - let's have a 350mm printer:    
     ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/1053158b-371a-410c-818f-e3f61b4c7b52)
   - another axis with 350mm:  
