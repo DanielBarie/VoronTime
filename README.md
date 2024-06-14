@@ -126,6 +126,9 @@ https://docs.vorondesign.com/build/software/configuration.html
 
    
 
+# Can't connect to MCU?
+There's a bug....
+https://www.teamfdm.com/forums/topic/1892-beware-latest-klipper-update-breaks-symlink-to-mcu-on-usb-connected-devices/
 
 - 
 # Issues still open:
