@@ -1,13 +1,25 @@
 # VoronTime
-It's Voron TIme.
+It's Voron Time. 
 
-Built with an LDO kit.
+Built with an LDO kit.  
+
+Issues along the way:  
+- See safety
+- the kit differs in some ways from the "official" build. Piecing together the correct instructions isn't the easiest thing to do.
+
+# (planned) Modifications 
+- separate 5V PSU for Raspberry Pi  
+- Safety upgrade for heater control  
+- Voron Tap, maybe?
+- CNC parts for extruder
+- CNC parts for XY/Z belt tensioning
 
 # Things to do after completing mechanics
 Following https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_c
 
 # SAFETY!
-Disconnect Heater Cables for Hotend and Bed Heating. (Pre-loaded BTT firmware may have these active, so Hotend and/or Bed may get hot).
+- Disconnect Heater Cables for Hotend and Bed Heating. (Pre-loaded BTT firmware may have these active, so Hotend and/or Bed may get hot).
+- Even though having updated the firmware als per [LDO's instructions](https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_c)  I had (at least two) cases where the heaters (Hotend, Bed) came on after startup without having activated theses in Klipper. Klipper performed a shutdown because the Hotend was outside its specified temperature range, heating continued anyway?!?) The Hotend (E3D) maxed out at 380°C. This will have to be rectified (probably by adding separate relays into Hotend/Bed Heater circuits which are controlled by Klipper's shutdown state).
 
 ## Get the printer into the local wlan
 - Maybe do this from the imager (Ctrl-Shift-X), if not:
@@ -85,7 +97,7 @@ Just Update all (lower right corner)
 https://docs.vorondesign.com/build/software/configuration.html
 - get it from https://raw.githubusercontent.com/VoronDesign/Voron-2/Voron2.4/firmware/klipper_configurations/Octopus/Voron2_Octopus_Config.cfghttps://raw.githubusercontent.com/VoronDesign/Voron-2/Voron2.4/firmware/klipper_configurations/Octopus/Voron2_Octopus_Config.cfg
 - rename to ```printer.cfg```
-- OR: Get the LDO kri version (because we've been using the Rev. C kit): https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/Firmware/octopus-printer-rev-c.cfg  
+- OR (better): Get the LDO kit version (because we've been using the Rev. C kit): https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/Firmware/octopus-printer-rev-c.cfg  
 - upload mainsail -> machine -> config files -> upload:
 ![grafik](https://github.com/DanielBarie/VoronTime/assets/73287620/729b459f-72ff-4ccb-b0c7-51eb53b60356)
 - our octopus board's id is ```usb-Klipper_stm32f446xx_52001F000551313133353932-if00``` (```ls /dev/serial/by-id```)
@@ -137,7 +149,7 @@ https://www.teamfdm.com/forums/topic/1892-beware-latest-klipper-update-breaks-sy
 - check groundung of DIN rails
 - check grounding of frame
 - check 5V Octopus Adapter according to https://news.ldomotors.com/2023/01/19/octopus-power-adapter-issue/
-- square gantry
+- square gantry (done, heat soaking will need to be done after having installed panels)
 - install lcd cover
 
 
