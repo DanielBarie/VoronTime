@@ -22,8 +22,9 @@ Following https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_c
 - Even though having updated the firmware als per [LDO's instructions](https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_c)  I had (at least two) cases where the heaters (Hotend, Bed) came on after startup without having activated theses in Klipper. Klipper performed a shutdown because the Hotend was outside its specified temperature range, heating continued anyway?!?) The Hotend (E3D) maxed out at 380°C. This will have to be rectified (probably by adding separate relays into Hotend/Bed Heater circuits which are controlled by Klipper's shutdown state).
 
 First step is setting heater pins to a defined state at Klipper firmware startup (HE0 is hotend, HE1 is bed via SSR):
-![grafik](https://github.com/user-attachments/assets/07beac1f-526d-43a5-aa5e-6988128a442a)
-![grafik](https://github.com/user-attachments/assets/10ff971a-2df5-447b-b4e9-50763ef77888)
+![grafik](https://github.com/user-attachments/assets/ecb594f2-874d-45ea-88d3-da5381bdd1bd)
+![grafik](https://github.com/user-attachments/assets/ca41198c-71c1-4979-b178-74ebc76b5c27) (from https://github.com/bigtreetech/BIGTREETECH-OCTOPUS-V1.0/blob/master/Hardware/BIGTREETECH%20Octopus%20-%20SCH.pdf)
+
 
 Also make sure to have the right config for your Octopus Board. Ours is a v1.1 
 
@@ -94,7 +95,7 @@ Just Update all (lower right corner)
 - we have:
   - STM32F446
 - all other options as per above guide (only had to change clock to 12MHz)
-- DO MAKE SURE TO SET PIN VALUES FOR STARTUP (!PA0,!PA3,!PB0,!PB11)
+- DO MAKE SURE TO SET PIN VALUES FOR STARTUP (!PA2,!PA3,!PB10,!PB11)
 - compile (```make```), gives firmware bin file
 - as for booting the board in DFU mode: That's a huge pain. Sometimes it might work, sometimes it just doesn't for no obvious reason.
 - So we go for putting the fimrware on the sd card.
