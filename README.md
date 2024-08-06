@@ -1,7 +1,7 @@
 # VoronTime
 It's Voron Time. 
 
-Built with an LDO kit.  
+Built with an LDO kit, rev C.  
 
 Issues along the way:  
 - See safety
@@ -20,6 +20,13 @@ Following https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_c
 # SAFETY!
 - Disconnect Heater Cables for Hotend and Bed Heating. (Pre-loaded BTT firmware may have these active, so Hotend and/or Bed may get hot).
 - Even though having updated the firmware als per [LDO's instructions](https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_c)  I had (at least two) cases where the heaters (Hotend, Bed) came on after startup without having activated theses in Klipper. Klipper performed a shutdown because the Hotend was outside its specified temperature range, heating continued anyway?!?) The Hotend (E3D) maxed out at 380°C. This will have to be rectified (probably by adding separate relays into Hotend/Bed Heater circuits which are controlled by Klipper's shutdown state).
+
+First step is setting heater pins to a defined state at Klipper firmware startup (HE0 is hotend, HE1 is bed via SSR):
+![grafik](https://github.com/user-attachments/assets/488a74a4-a488-46a5-ae14-603dd10b0d3d)
+![grafik](https://github.com/user-attachments/assets/10ff971a-2df5-447b-b4e9-50763ef77888)
+
+Also make sure to have the right config for your Octopus Board. Ours is a v1.1 
+
 
 ## Get the printer into the local wlan
 - Maybe do this from the imager (Ctrl-Shift-X), if not:
