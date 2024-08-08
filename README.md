@@ -147,7 +147,11 @@ https://docs.vorondesign.com/build/software/configuration.html
   -   Next: Check Bed Heating (complains about not heating quickly enough); Extruder Heating works
     
 
-   
+# Chaoticlab CNC Upgrade:
+## XY Joints
+Make sure to mount the toothed pulley on the black stand-off.
+![grafik](https://github.com/user-attachments/assets/b8f1047c-0181-4095-bcb3-7c05264423b8)
+
 
 # Can't connect to MCU?
 There's a bug....
