@@ -10,9 +10,9 @@ Issues along the way:
 # (planned) Modifications 
 - separate 5V PSU for Raspberry Pi  
 - Safety upgrade for heater control  
-- Voron Tap, maybe?
+- Voron Tap, done
 - CNC parts for extruder
-- CNC parts for XY/Z belt tensioning
+- CNC parts for XY/Z belt tensioning (done, full CNC kit)
 
 # Things to do after completing mechanics
 Following https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_c
@@ -151,6 +151,10 @@ https://docs.vorondesign.com/build/software/configuration.html
 ## XY Joints
 Make sure to mount the toothed pulley on the black stand-off.
 ![grafik](https://github.com/user-attachments/assets/b8f1047c-0181-4095-bcb3-7c05264423b8)
+
+## Voron Tap V2
+Belts need to be clipped.  
+Won't activate the endstop. We need to print https://www.printables.com/de/model/781495-chaoticlab-voron-tap-v2-bracket-for-xy-endstop-pcb/files (TAP_XY_XL.stl) and mount this to the extension bracket intended for the endstop.
 
 
 # Can't connect to MCU?
