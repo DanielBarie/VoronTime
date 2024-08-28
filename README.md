@@ -5,7 +5,8 @@ Built with an LDO kit, rev C.
 
 Issues along the way:  
 - See safety
-- the kit differs in some ways from the "official" build. Piecing together the correct instructions isn't the easiest thing to do.
+- The kit differs in some ways from the "official" build. Piecing together the correct instructions isn't the easiest thing to do.
+- Chaoticlab CNC mod: Had to re-design/fix some parts.
 
 # (planned) Modifications 
 - separate 5V PSU for Raspberry Pi  
@@ -149,15 +150,24 @@ https://docs.vorondesign.com/build/software/configuration.html
 
 # Chaoticlab CNC Upgrade:
 ## XY Joints
-Make sure to mount the toothed pulley on the black stand-off.
-![grafik](https://github.com/user-attachments/assets/b8f1047c-0181-4095-bcb3-7c05264423b8)  
-Regular D2F endstop pod doesn't fit (Y Endstop doesn't reliably trigger). CNC Z Joints are smaller (not as wide) as the printed ones. To fix this, the endstop pod needs to be extended in y-direction (approx. 2mm). Part: endstop_pod_extended_2.0.stl 
+Make sure to mount the toothed pulley on the black stand-off.  
+![grafik](https://github.com/user-attachments/assets/b8f1047c-0181-4095-bcb3-7c05264423b8)    
+Regular D2F endstop pod doesn't fit (Y Endstop doesn't reliably trigger). CNC Z Joints are smaller (not as wide) as the printed ones. To fix this, the endstop pod needs to be extended in y-direction (approx. 2mm). Part: ![modified/extended endstop pod](endstop_pod_extended_2.0.stl)  
 
 ## Voron Tap V2
 - Belts need to be clipped.  
 - Won't activate the X endstop. We need to print https://www.printables.com/de/model/781495-chaoticlab-voron-tap-v2-bracket-for-xy-endstop-pcb/files (TAP_XY_XL.stl) and mount this to the extension bracket intended for the endstop.
-- LDO toolhead pcb probe connector has a different wiring, doesn't match with Chaoticlab's Tap wiring harness: https://www.reddit.com/r/VORONDesign/comments/1aq32nw/chaotic_lab_cnc_tap_not_working/ Get some JST XH 3 pin connectors.
-- 
+
+### LDO Toolhead PCB ChaoticLab V2 Wiring mismatch  
+The LDO toolhead pcb probe connector has a different wiring, doesn't match Chaoticlab's Tap wiring harness: https://www.reddit.com/r/VORONDesign/comments/1aq32nw/chaotic_lab_cnc_tap_not_working/   
+Get some JST XH 3 pin connectors, unpinning the one on the wiring harness didn't work for me. Cut it off.   
+Original wiring harness connector on the toolhead side:  
+![toolhead_connector_orig](https://github.com/user-attachments/assets/1a565f27-5c9c-4b24-bef2-4b9db69e4ff8)  
+New wiring harness connector on the toolhead side:  
+![toolhead_connector_new](https://github.com/user-attachments/assets/d5fa67d1-628b-4222-b161-fd4c43dcf1f7)  
+
+
+
 
 
 
