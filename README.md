@@ -150,11 +150,13 @@ https://docs.vorondesign.com/build/software/configuration.html
 # Chaoticlab CNC Upgrade:
 ## XY Joints
 Make sure to mount the toothed pulley on the black stand-off.
-![grafik](https://github.com/user-attachments/assets/b8f1047c-0181-4095-bcb3-7c05264423b8)
+![grafik](https://github.com/user-attachments/assets/b8f1047c-0181-4095-bcb3-7c05264423b8)  
+Regular D2F endstop pod doesn't fit (Y Endstop doesn't reliably trigger). CNC Z Joints are smaller (not as wide) as the printed ones. To fix this, the endstop pod needs to be extended in y-direction (approx. 2mm). Part: endstop_pod_extended_2.0.stl 
 
 ## Voron Tap V2
 Belts need to be clipped.  
-Won't activate the endstop. We need to print https://www.printables.com/de/model/781495-chaoticlab-voron-tap-v2-bracket-for-xy-endstop-pcb/files (TAP_XY_XL.stl) and mount this to the extension bracket intended for the endstop.
+Won't activate the X endstop. We need to print https://www.printables.com/de/model/781495-chaoticlab-voron-tap-v2-bracket-for-xy-endstop-pcb/files (TAP_XY_XL.stl) and mount this to the extension bracket intended for the endstop.  
+
 
 
 # Can't connect to MCU?
