@@ -14,6 +14,8 @@ Issues along the way:
 - Voron Tap, done
 - CNC parts for extruder
 - CNC parts for XY/Z belt tensioning (done, full CNC kit)
+- AngryCam
+- Z-Belt Covers with cable guides (done, modified with cutouts for linear rails)
 
 # Things to do after completing mechanics
 Following https://docs.ldomotors.com/en/voron/voron2/wiring_guide_rev_c
@@ -166,16 +168,18 @@ Original wiring harness connector on the toolhead side:
 New wiring harness connector on the toolhead side:  
 ![toolhead_connector_new](https://github.com/user-attachments/assets/d5fa67d1-628b-4222-b161-fd4c43dcf1f7)  
 
-
-
-
-
-
 # Can't connect to MCU?
 There's a bug....
 https://www.teamfdm.com/forums/topic/1892-beware-latest-klipper-update-breaks-symlink-to-mcu-on-usb-connected-devices/
 
-- 
+# Z Belt Covers
+Since there is LED strips installed we needed some way of getting the wiring into the electronics compartment. LDO provides STLs for modified Z Belt Covers, see https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/z_belt_cover_a_led.stl  
+These will do the job but there's better ones: https://mods.vorondesign.com/details/LzEFU0RDHXUarF7y69x2Q  
+Our Z linear rails are too close, so We modified these with cutouts for the linear rails:
+- [Z Belt Cover A, STEP-File](cable_routing_z_belt_cover_a_mod_v2_cutout_rail.4%20v1.step)
+- [Z Belt Cover B, STEP-File](cable_routing_z_belt_cover_b_mod_v2_cutout_rail.4%20v1.step)
+
+  
 # Issues still open:
 - check groundung of DIN rails
 - check grounding of frame
